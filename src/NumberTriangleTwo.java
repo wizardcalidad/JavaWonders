@@ -1,7 +1,7 @@
 public class NumberTriangleTwo {
         public static void main(String[] args) {
-            int space = 5;
-            for (int i = 1; i<=5; i++){
+            int space = 6;
+            for (int i = 1; i<=6; i++){
                 for (space=6; space >= i; space--){
                     System.out.print(" ");
                 }
