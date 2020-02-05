@@ -6,7 +6,7 @@ public class ValueOfPie {
         double positivePi =1.0;
         int pi = 4;
         while (i<=200000){
-            switch(pi){
+            switch(i){
                 case 1:
                     negativePi = -(4/i);
                     i+=2;
