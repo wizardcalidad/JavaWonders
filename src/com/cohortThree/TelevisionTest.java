@@ -4,14 +4,15 @@ public class TelevisionTest {
     public static void main(String[] args) {
         Television lg = new Television();
 
-        lg.turnTvOn();
-       lg.changeChannel();
-        lg.channelUp(1);
+        //lg.turnTvOn();
         lg.setVolumeUp();
         lg.setVolumeUp();
-       // lg.VolumeDown();
+        lg.getVolumeUp();
+      //  lg.channelUp(1);
 
-        System.out.println(lg.getVolumeUp());
+       lg.changeChannel();
+
+
 
     }
 }

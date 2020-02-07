@@ -87,32 +87,22 @@ Scanner sc = new Scanner(System.in);
     }
 
     public void setVolumeUp(){
-        this.volume = volume + 1;
-    }
 
+        this.volume++;
+    }
     public int getVolumeUp(){
+        System.out.printf("Tv volume is at %d%n", volume);
         return volume;
-
     }
 
-//    public void VolumeUp(){
-//       // this.volume =volume;
-//      // while (isTvOn == true) {
-//         //  if (isTvOn) {
-//               volume++;
-//               System.out.printf("Volume: ",volume++);
-//         //  }
-//      // }
-//
-//    }
-//    public void VolumeDown(){
-//       // this.volume =volume;
-//       // while (isTvOn == true) {
-//          //  if (isTvOn) {
-//                volume--;
-//                System.out.printf("Volume: ",volume--);
-//          //  }
-//       // }
-//    }
+    public void setVolumeDown(){
+
+        this.volume--;
+    }
+    public int getVolumeDown(){
+        return volume;
+    }
+
+
 
 }
