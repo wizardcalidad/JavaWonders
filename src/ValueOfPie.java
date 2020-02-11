@@ -1,27 +1,25 @@
-public class ValueOfPie {
-    public static void main(String[] args) {
-       int i =1;
-       int n =1;
-        double negativePi =1.0;
-        double positivePi =1.0;
-        int pi = 4;
-        while (i<=200000){
-            switch(i){
+public class ValueOfPie
+{
+    public static void main(String[] args)
+    {
+       double pi = 4.00;
+        double x = 0.0;
+        int d = 3;
+
+        for(int i =1;i <= 200000; i++)
+        {
+            switch(i % 2)
+            {
+                case 0:
+                    x = (4.00 / d);
+                    break;
                 case 1:
-                    negativePi = -(4/i);
-                    i+=2;
-                    break;
-                case 2:
-                    positivePi = + (4/i);
-                    break;
-                default:
-                    pi = 4;
+                    x =  (-4.00 / d);
                     break;
             }
-
-            double valueOfPi  = (double) (pi + negativePi + positivePi);
-            System.out.println(valueOfPi);
+            pi += x;
+            d += 2;
         }
-
+        System.out.println(pi);
     }
 }
